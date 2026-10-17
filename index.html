@@ -106,6 +106,14 @@
     .course-card .card-link { display: inline-flex; gap: 7px; align-items: center; margin-top: auto; padding-top: 17px; color: #35563b; font-size: 11px; font-weight: 900; text-decoration: none; text-transform: uppercase; letter-spacing: .02em; }
     .course-card.free .card-link { color: var(--green); }
     .fine-print { color: var(--muted); font-size: 11px; line-height: 1.6; margin: 15px 0 0; }
+    .tool-guide { padding: 72px 0; }
+    .tool-guide-grid { display: grid; grid-template-columns: 1fr minmax(240px, 340px); gap: 40px; align-items: center; padding: 32px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+    .tool-guide h2 { margin: 12px 0 18px; font-size: clamp(29px, 4vw, 45px); line-height: 1.08; letter-spacing: -.045em; }
+    .tool-guide p { color: var(--muted); font-size: 14px; }
+    .tool-guide figure { margin: 0; width: 100%; }
+    .tool-guide video { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: contain; background: #101512; border-radius: 16px; }
+    .tool-guide figcaption { color: var(--muted); font-size: 11px; margin-top: 10px; }
+    .course-card .guide-link { display: inline-block; margin-top: 14px; color: var(--green-dark); font-size: 11px; font-weight: 850; text-decoration: underline; text-underline-offset: 3px; }
     .veo-section { padding: 75px 0; }
     .veo-card { border-radius: 25px; background: #e5ebdc; padding: 33px 37px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 28px; }
     .veo-card .eyebrow { font-size: 10px; }
@@ -186,6 +194,9 @@
       .course-card h3 { font-size: 17px; }
       .course-icon { margin: 17px 0 12px; }
       .course-card .card-link { padding-top: 15px; }
+      .tool-guide { padding: 58px 0; }
+      .tool-guide-grid { grid-template-columns: 1fr; padding: 24px 21px; gap: 24px; }
+      .tool-guide figure { max-width: 340px; margin-inline: auto; }
       .veo-section { padding: 58px 0; }
       .veo-card { grid-template-columns: 1fr; padding: 24px 21px; }
       .veo-actions { align-items: flex-start; }
@@ -301,6 +312,7 @@
             <span class="course-icon" aria-hidden="true">▶</span>
             <h3>Tạo tool sản xuất video AI</h3>
             <p>Hướng dẫn tạo tool sản xuất hàng trăm video AI với chi phí bằng 0 cho TikTok Affiliate, view ngoại và YouTube. Chi phí thực tế có thể phụ thuộc công cụ, hạn mức miễn phí, nền tảng và hạ tầng sử dụng.</p>
+            <a class="guide-link" href="#huong-dan-tao-tool">XEM VIDEO HƯỚNG DẪN TẠO TOOL ↓</a>
             <a class="card-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">HỎI KHÓA NÀY QUA ZALO <span aria-hidden="true">↗</span></a>
           </article>
           <article class="course-card">
@@ -340,6 +352,25 @@
           </article>
         </div>
         <p class="fine-print">Chương trình không cam kết lượt xem, doanh thu hay kết quả quảng cáo. Hãy trao đổi với FTG về nội dung và lịch học trước khi đăng ký.</p>
+      </div>
+    </section>
+
+    <section class="tool-guide" id="huong-dan-tao-tool" aria-labelledby="tool-guide-title">
+      <div class="wrap tool-guide-grid">
+        <div>
+          <div class="eyebrow">HƯỚNG DẪN · TOOL SẢN XUẤT VIDEO AI</div>
+          <h2 id="tool-guide-title">HƯỚNG DẪN TẠO TOOL ĐỂ LÀM ĐƯỢC NHƯ VIDEO</h2>
+          <p>Xem video minh họa bên cạnh cho nội dung tạo tool sản xuất video AI. Bạn có thể phát, tạm dừng hoặc mở toàn màn hình để theo dõi rõ hơn.</p>
+          <p>Muốn học cách tạo tool để làm được như video? Trao đổi với FTG về nội dung khóa học và cách thực hành phù hợp với mục tiêu của bạn.</p>
+          <a class="button" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">HỎI CÁCH TẠO TOOL QUA ZALO <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <figure>
+          <video controls playsinline preload="none" poster="assets/huong-dan-tao-tool-video-ai.jpg" width="1080" height="1920" aria-label="Video minh họa cho hướng dẫn tạo tool sản xuất video AI">
+            <source src="assets/huong-dan-tao-tool-video-ai.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ phát video. <a href="assets/huong-dan-tao-tool-video-ai.mp4">Mở video tại đây</a>.
+          </video>
+          <figcaption>VIDEO MINH HỌA · <a href="assets/huong-dan-tao-tool-video-ai.mp4" target="_blank" rel="noopener noreferrer">Mở video riêng</a></figcaption>
+        </figure>
       </div>
     </section>
 
