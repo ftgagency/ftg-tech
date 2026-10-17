@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f5ef">
-  <meta name="description" content="Tool tạo video bằng Veo 3, giá 300.000₫/tháng. Nhắn Zalo cho FTG để hỏi mua và nhận sản phẩm.">
-  <title>Tool tạo video Veo 3 — 300.000₫/tháng | FTG Tech</title>
+  <meta name="description" content="Khóa học AI, Automation n8n, Multi-Agent và coaching cho doanh nghiệp tại FTG Tech. Có Zoom AI Agent miễn phí hằng tuần. Tool tạo video Veo 3 giá 300.000₫/tháng.">
+  <title>Khóa học AI & Automation | FTG Tech</title>
   <style>
     :root {
       --paper: #f5f5ef;
@@ -21,55 +21,45 @@
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--paper);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.55;
-      -webkit-font-smoothing: antialiased;
-    }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
     a { color: inherit; }
     img { display: block; max-width: 100%; }
     .skip-link { position: absolute; left: -9999px; top: 1rem; z-index: 99; padding: .75rem 1rem; background: var(--white); }
     .skip-link:focus { left: 1rem; }
     .wrap { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
-    .announcement { background: var(--ink); color: #f5f5ef; font-size: 14px; letter-spacing: .06em; text-align: center; padding: 9px 16px; }
+    .announcement { background: var(--ink); color: #f5f5ef; font-size: 14px; letter-spacing: .04em; text-align: center; padding: 9px 16px; }
     .announcement strong { color: var(--green); font-weight: 700; }
-    header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(24,33,29,.08); background: rgba(245,245,239,.92); backdrop-filter: blur(14px); }
+    header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(24,33,29,.08); background: rgba(245,245,239,.94); backdrop-filter: blur(14px); }
     .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; flex: 0 0 auto; }
     .brand-mark { width: 39px; height: 39px; border-radius: 13px; display: grid; place-items: center; background: var(--green); color: var(--ink); font-weight: 900; font-size: 15px; letter-spacing: -.08em; }
     .brand-name { display: flex; flex-direction: column; line-height: 1.05; }
     .brand-name strong { font-size: 17px; letter-spacing: .025em; }
     .brand-name small { margin-top: 5px; color: var(--muted); font-size: 10px; letter-spacing: .16em; font-weight: 700; }
-    .nav-links { display: flex; align-items: center; gap: 30px; }
-    .nav-links a { color: #435049; text-decoration: none; font-size: 15px; font-weight: 650; transition: color .18s ease; }
+    .nav-links { display: flex; align-items: center; gap: 27px; }
+    .nav-links a { color: #435049; text-decoration: none; font-size: 14px; font-weight: 650; transition: color .18s ease; }
     .nav-links a:hover { color: #568331; }
     .nav-cta, .button { border: 0; border-radius: 99px; background: var(--ink); color: var(--white); text-decoration: none; font-size: 15px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 13px 19px; transition: transform .18s ease, background .18s ease; }
     .nav-cta:hover, .button:hover { background: #314d38; transform: translateY(-2px); }
     .nav-cta .arrow, .button .arrow { font-size: 20px; line-height: .7; }
-    .menu-mobile { display: none; }
-
     .hero { padding: 73px 0 62px; overflow: hidden; }
     .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; align-items: center; gap: clamp(32px, 6vw, 78px); }
-    .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--green-dark); font-size: 13px; letter-spacing: .13em; font-weight: 800; text-transform: uppercase; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--green-dark); font-size: 13px; letter-spacing: .12em; font-weight: 800; text-transform: uppercase; }
     .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #77ad45; box-shadow: 0 0 0 4px rgba(119,173,69,.14); }
-    h1 { max-width: 630px; margin: 21px 0 20px; font-size: clamp(49px, 7.13vw, 87px); line-height: .99; letter-spacing: -.065em; font-weight: 760; }
+    h1 { max-width: 650px; margin: 21px 0 20px; font-size: clamp(48px, 6.3vw, 78px); line-height: .99; letter-spacing: -.065em; font-weight: 760; }
     h1 em { font-style: normal; color: #6a963f; }
-    .hero-copy { max-width: 495px; color: #58645d; font-size: 18px; line-height: 1.75; margin: 0; }
+    .hero-copy { max-width: 535px; color: #58645d; font-size: 18px; line-height: 1.75; margin: 0; }
     .hero-actions { display: flex; align-items: center; gap: 21px; margin-top: 29px; flex-wrap: wrap; }
     .text-link { display: inline-flex; gap: 9px; align-items: center; font-size: 15px; font-weight: 700; text-decoration: none; }
     .text-link span { font-size: 21px; }
-    .hero-note { display: flex; gap: 11px; align-items: center; margin-top: 36px; color: #66726b; font-size: 13px; }
+    .hero-note { display: flex; gap: 11px; align-items: center; margin-top: 30px; color: #66726b; font-size: 13px; }
     .note-dot { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: #e5eddb; color: #456d38; font-size: 16px; font-weight: 800; }
     .hero-visual { position: relative; min-height: 424px; border-radius: 32px; background: #dce3d7; padding: 13px; box-shadow: 0 24px 65px rgba(37,54,39,.13); transform: rotate(1.3deg); }
     .hero-visual::before { content: ""; position: absolute; width: 122px; height: 122px; border-radius: 50%; background: var(--green); right: -28px; top: -27px; z-index: -1; }
     .hero-visual img { width: 100%; height: 398px; border-radius: 22px; object-fit: cover; object-position: center; }
-    .visual-tag { position: absolute; left: 31px; bottom: 31px; border: 1px solid rgba(255,255,255,.65); border-radius: 15px; padding: 12px 16px; background: rgba(255,255,255,.9); backdrop-filter: blur(10px); box-shadow: 0 8px 30px rgba(0,0,0,.1); transform: rotate(-1.3deg); }
+    .visual-tag { position: absolute; left: 31px; bottom: 31px; border: 1px solid rgba(255,255,255,.65); border-radius: 15px; padding: 12px 16px; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); box-shadow: 0 8px 30px rgba(0,0,0,.1); transform: rotate(-1.3deg); }
     .visual-tag small { display: block; color: #68746d; text-transform: uppercase; font-size: 10px; font-weight: 800; letter-spacing: .12em; }
     .visual-tag strong { display: block; margin-top: 3px; font-size: 15px; }
-
     .principles { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .principle-row { display: grid; grid-template-columns: repeat(3, 1fr); }
     .principle { display: flex; align-items: center; gap: 14px; padding: 21px 25px; }
@@ -77,34 +67,37 @@
     .principle-icon { width: 34px; height: 34px; display: grid; place-items: center; flex: 0 0 auto; border: 1px solid #d9e2d2; background: #edf1e8; color: #537c3b; border-radius: 12px; font-weight: 850; }
     .principle strong { display: block; font-size: 15px; }
     .principle small { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
-
     section { scroll-margin-top: 95px; }
-    .catalog { padding: 98px 0 91px; }
-    .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-bottom: 34px; }
+    .catalog { padding: 91px 0 86px; }
+    .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-bottom: 32px; }
     .section-heading h2, .about-copy h2 { margin: 13px 0 0; font-size: clamp(37px, 4.83vw, 56px); letter-spacing: -.055em; line-height: 1.05; }
-    .section-heading p { max-width: 380px; color: var(--muted); font-size: 15px; margin: 0 0 3px; }
-    .catalog-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; }
-    .coming-card { min-height: 322px; padding: 30px; border-radius: var(--radius); background: #e5ebdc; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
-    .coming-card::after { content: ""; position: absolute; width: 270px; height: 270px; border-radius: 50%; right: -69px; bottom: -104px; background: var(--green); opacity: .72; }
-    .coming-top { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: start; }
-    .status { padding: 7px 11px; background: rgba(255,255,255,.75); border-radius: 99px; color: #47623b; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
-    .orbit { width: 52px; height: 52px; border: 1px solid rgba(41,74,49,.3); border-radius: 50%; display: grid; place-items: center; color: #42633b; font-size: 23px; }
-    .coming-copy { position: relative; z-index: 1; max-width: 400px; }
-    .coming-copy h3 { margin: 0 0 10px; font-size: clamp(28px, 3.45vw, 39px); line-height: 1.08; letter-spacing: -.045em; }
-    .coming-copy p { margin: 0; max-width: 365px; font-size: 15px; color: #56645a; }
-    .product-empty { border: 1px dashed #c9d1c4; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; padding: 34px; background: rgba(255,255,255,.48); text-align: center; }
-    .empty-inner { max-width: 250px; }
-    .empty-symbol { width: 56px; height: 56px; display: grid; place-items: center; margin: 0 auto 16px; border-radius: 19px; background: var(--white); color: #648749; font-size: 25px; box-shadow: 0 6px 18px rgba(29,51,31,.06); }
-    .product-empty h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -.02em; }
-    .product-empty p { margin: 0; color: var(--muted); font-size: 14px; }
-    .category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 17px; }
-    .category { min-height: 167px; border: 1px solid var(--line); border-radius: 19px; padding: 21px; background: rgba(255,255,255,.52); display: flex; flex-direction: column; justify-content: space-between; }
-    .category-top { display: flex; justify-content: space-between; align-items: center; }
-    .category-num { color: #7b8980; font-size: 12px; font-weight: 800; letter-spacing: .1em; }
-    .category-mark { width: 33px; height: 33px; display: grid; place-items: center; border-radius: 11px; color: #35563b; background: #e8efdf; font-size: 17px; font-weight: 800; }
-    .category h3 { margin: 20px 0 5px; font-size: 17px; letter-spacing: -.025em; }
-    .category p { color: var(--muted); margin: 0; font-size: 13px; }
-
+    .section-heading p { max-width: 420px; color: var(--muted); font-size: 15px; margin: 0 0 3px; }
+    .course-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .course-card { min-height: 330px; padding: 24px; border: 1px solid var(--line); border-radius: 22px; background: rgba(255,255,255,.66); display: flex; flex-direction: column; align-items: flex-start; }
+    .course-card.featured { background: #e5ebdc; border-color: #e5ebdc; }
+    .course-card.free { background: var(--ink); color: var(--white); border-color: var(--ink); }
+    .course-top { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .course-type { color: #6f7c73; font-size: 11px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+    .course-card.free .course-type { color: #c6d1c8; }
+    .price { white-space: nowrap; border-radius: 99px; padding: 7px 11px; background: #edf1e8; color: #35563b; font-size: 13px; font-weight: 850; }
+    .featured .price { background: rgba(255,255,255,.76); }
+    .free .price { background: var(--green); color: var(--ink); }
+    .course-icon { width: 43px; height: 43px; display: grid; place-items: center; margin: 23px 0 16px; border-radius: 14px; background: #edf1e8; color: #42633b; font-size: 20px; font-weight: 800; }
+    .featured .course-icon { background: rgba(255,255,255,.7); }
+    .free .course-icon { background: rgba(185,239,112,.16); color: var(--green); }
+    .course-card h3 { margin: 0 0 10px; font-size: 21px; line-height: 1.2; letter-spacing: -.035em; }
+    .course-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .course-card.free p { color: #c6d1c8; }
+    .course-card .card-link { display: inline-flex; gap: 8px; align-items: center; margin-top: auto; padding-top: 20px; color: #35563b; font-size: 14px; font-weight: 800; text-decoration: none; }
+    .course-card.free .card-link { color: var(--green); }
+    .fine-print { color: var(--muted); font-size: 12px; line-height: 1.6; margin: 18px 0 0; }
+    .veo-section { padding: 0 0 90px; }
+    .veo-card { border-radius: 25px; background: #e5ebdc; padding: 34px 38px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 28px; }
+    .veo-card .eyebrow { font-size: 11px; }
+    .veo-card h2 { margin: 12px 0 9px; font-size: clamp(28px, 4vw, 41px); line-height: 1.08; letter-spacing: -.05em; }
+    .veo-card p { max-width: 670px; color: #56645a; margin: 0; font-size: 15px; }
+    .veo-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+    .veo-price { font-size: 17px; font-weight: 850; white-space: nowrap; }
     .about { padding: 77px 0 82px; background: var(--ink); color: var(--white); }
     .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 70px; }
     .about-badge { width: 100%; max-width: 350px; aspect-ratio: 1; margin-inline: auto; border-radius: 50%; background: var(--green); display: grid; place-items: center; position: relative; color: var(--ink); }
@@ -118,8 +111,7 @@
     .about-copy p { max-width: 555px; color: #bac4bc; font-size: 16px; line-height: 1.8; margin: 0; }
     .about-points { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 15px 22px; margin-top: 28px; }
     .about-point { display: flex; align-items: center; gap: 10px; color: #e4e9e3; font-size: 14px; }
-    .about-point span { display: grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: rgba(185,239,112,.16); color: var(--green); font-size: 13px; }
-
+    .about-point span { display: grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: rgba(185,239,112,.16); color: var(--green); font-size: 13px; flex: 0 0 auto; }
     .closing { padding: 75px 0; }
     .closing-card { background: var(--green); border-radius: 25px; padding: 36px 42px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
     .closing-card small { font-size: 12px; letter-spacing: .13em; font-weight: 850; text-transform: uppercase; color: #42553d; }
@@ -128,31 +120,22 @@
     footer { border-top: 1px solid var(--line); }
     .footer-row { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 13px; }
     .footer-row a { color: var(--ink); text-decoration: none; font-weight: 700; }
-    .footer-brand { display: inline-flex; align-items: center; gap: 9px; color: var(--ink); font-weight: 800; }
+    .footer-brand { display: inline-flex; align-items: center; gap: 9px; color: var(--ink); font-weight: 800; white-space: nowrap; }
     .footer-brand .brand-mark { width: 29px; height: 29px; border-radius: 9px; font-size: 12px; }
-
-    @media (max-width: 820px) {
-      .wrap { width: min(var(--max), calc(100% - 36px)); }
-      .nav { min-height: 68px; }
-      .nav-links { gap: 17px; }
-      .nav-links a { font-size: 14px; }
-      .nav-cta { padding: 11px 14px; font-size: 14px; }
-      .hero { padding: 56px 0 48px; }
-      .hero-grid { gap: 32px; }
-      .hero-visual { min-height: 345px; }
-      .hero-visual img { height: 319px; }
-      .principle { padding: 18px 13px; }
-      .catalog { padding: 76px 0 72px; }
+    @media (max-width: 900px) {
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: 13px; }
+      .course-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .about-grid { gap: 42px; }
     }
-    @media (max-width: 620px) {
-      .wrap { width: calc(100% - 32px); }
-      .announcement { font-size: 12px; }
+    @media (max-width: 700px) {
+      .wrap { width: calc(100% - 36px); }
+      .nav { min-height: 68px; }
       .nav-links { display: none; }
-      .brand-name strong { font-size: 16px; }
-      .hero { padding: 43px 0 39px; }
-      .hero-grid { grid-template-columns: 1fr; gap: 34px; }
-      h1 { max-width: 460px; font-size: clamp(52px, 14.95vw, 71px); }
+      .nav-cta { padding: 11px 14px; font-size: 14px; }
+      .hero { padding: 45px 0 40px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+      h1 { max-width: 560px; font-size: clamp(49px, 12.5vw, 70px); }
       .hero-copy { font-size: 16px; }
       .hero-visual { min-height: 300px; transform: rotate(.5deg); }
       .hero-visual img { height: 274px; }
@@ -161,15 +144,16 @@
       .principle-row { grid-template-columns: 1fr; padding: 9px 0; }
       .principle { padding: 12px 5px; }
       .principle + .principle { border-left: 0; border-top: 1px solid var(--line); }
-      .catalog { padding: 65px 0 61px; }
+      .catalog { padding: 65px 0 58px; }
       .section-heading { display: block; margin-bottom: 24px; }
       .section-heading p { margin-top: 14px; }
-      .catalog-grid { grid-template-columns: 1fr; }
-      .coming-card { min-height: 270px; padding: 23px; }
-      .product-empty { min-height: 225px; }
-      .category-grid { grid-template-columns: 1fr; gap: 10px; }
-      .category { min-height: 130px; padding: 18px; }
-      .category h3 { margin-top: 14px; }
+      .course-grid { grid-template-columns: 1fr; gap: 12px; }
+      .course-card { min-height: 0; padding: 22px; }
+      .course-icon { margin: 19px 0 13px; }
+      .course-card .card-link { padding-top: 16px; }
+      .veo-section { padding-bottom: 62px; }
+      .veo-card { grid-template-columns: 1fr; padding: 26px 23px; }
+      .veo-actions { align-items: flex-start; }
       .about { padding: 59px 0 63px; }
       .about-grid { grid-template-columns: 1fr; gap: 38px; }
       .about-badge { max-width: 230px; }
@@ -187,7 +171,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
-  <div class="announcement"><strong>FTG TECH</strong> &nbsp;·&nbsp; Tool tạo video Veo 3 · <strong>300.000₫ / tháng</strong> · Liên hệ qua Zalo</div>
+  <div class="announcement"><strong>FTG TECH</strong> &nbsp;·&nbsp; Khóa học AI & Automation · Tool Veo 3 <strong>300.000₫ / tháng</strong> · Liên hệ qua Zalo</div>
   <header>
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="FTG Tech — về đầu trang">
@@ -195,9 +179,9 @@
         <span class="brand-name"><strong>FTG TECH</strong><small>BY FTG AGENCY</small></span>
       </a>
       <nav class="nav-links" aria-label="Điều hướng chính">
-        <a href="#danh-muc">Sản phẩm</a>
-        <a href="#cach-chon">Cách nhận</a>
-        <a href="#lien-he">Liên hệ</a>
+        <a href="#khoa-hoc">Khóa học</a>
+        <a href="#veo3">Tool Veo 3</a>
+        <a href="#cach-nhan">Cách đăng ký</a>
       </nav>
       <a class="nav-cta" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Nhắn Zalo <span class="arrow" aria-hidden="true">↗</span></a>
     </div>
@@ -207,74 +191,119 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">Công cụ tạo video Veo 3</div>
-          <h1 id="hero-title">Tạo video với <em>Veo 3.</em></h1>
-          <p class="hero-copy">Tool tạo video bằng Veo 3, giá 300.000₫/tháng. Muốn mua? Nhắn trực tiếp cho FTG qua Zalo để trao đổi và nhận sản phẩm.</p>
+          <div class="eyebrow">Đào tạo ứng dụng AI cho công việc & kinh doanh</div>
+          <h1 id="hero-title">Đưa AI vào <em>công việc thật.</em></h1>
+          <p class="hero-copy">Từ sản xuất video, nội dung và quảng cáo đến tự động hóa quy trình bằng n8n, Multi-Agent và tư vấn định hướng. Chọn chương trình phù hợp với mục tiêu của bạn.</p>
           <div class="hero-actions">
-            <a class="button" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Nhắn Zalo để mua <span class="arrow" aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#cach-chon">Cách nhận sản phẩm <span aria-hidden="true">→</span></a>
+            <a class="button" href="#khoa-hoc">Xem các khóa học <span class="arrow" aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Tư vấn qua Zalo <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="hero-note"><span class="note-dot" aria-hidden="true">i</span><span>Thuê theo tháng · 300.000₫ · Mua qua Zalo</span></div>
+          <div class="hero-note"><span class="note-dot" aria-hidden="true">i</span><span>Có khóa học miễn phí cho người mới bắt đầu với AI Agent</span></div>
         </div>
         <div class="hero-visual">
           <img src="assets/tech-workspace.jpg" alt="Không gian làm việc với laptop, máy tính bảng và điện thoại" width="3000" height="2001" fetchpriority="high">
-          <div class="visual-tag"><small>Tool tạo video Veo 3</small><strong>300.000₫ / tháng</strong></div>
+          <div class="visual-tag"><small>AI · Automation · Multi-Agent</small><strong>Học để ứng dụng thực tế</strong></div>
         </div>
       </div>
     </section>
 
-    <section class="principles" aria-label="Nguyên tắc giới thiệu">
+    <section class="principles" aria-label="Thông tin chương trình">
       <div class="wrap principle-row">
-        <div class="principle"><span class="principle-icon" aria-hidden="true">01</span><span><strong>Nhắn Zalo</strong><small>Liên hệ FTG để hỏi mua</small></span></div>
-        <div class="principle"><span class="principle-icon" aria-hidden="true">02</span><span><strong>Trao đổi trực tiếp</strong><small>Hỏi thông tin trước khi nhận</small></span></div>
-        <div class="principle"><span class="principle-icon" aria-hidden="true">03</span><span><strong>Nhận sản phẩm</strong><small>FTG gửi sau khi bạn liên hệ</small></span></div>
+        <div class="principle"><span class="principle-icon" aria-hidden="true">01</span><span><strong>Nhiều cấp độ</strong><small>Từ nhập môn đến coaching</small></span></div>
+        <div class="principle"><span class="principle-icon" aria-hidden="true">02</span><span><strong>Ứng dụng thực tế</strong><small>AI, nội dung và tự động hóa</small></span></div>
+        <div class="principle"><span class="principle-icon" aria-hidden="true">03</span><span><strong>Hỏi trực tiếp</strong><small>Trao đổi với FTG qua Zalo</small></span></div>
       </div>
     </section>
 
-    <section class="catalog" id="danh-muc" aria-labelledby="catalog-title">
+    <section class="catalog" id="khoa-hoc" aria-labelledby="catalog-title">
       <div class="wrap">
         <div class="section-heading">
-          <div><div class="eyebrow">Sản phẩm</div><h2 id="catalog-title">Tool tạo video Veo 3.</h2></div>
-          <p>Giá thuê là 300.000₫/tháng. Nhắn tin cho FTG qua Zalo để hỏi mua và nhận sản phẩm trực tiếp.</p>
+          <div><div class="eyebrow">Chương trình đào tạo</div><h2 id="catalog-title">Chọn kỹ năng bạn cần.</h2></div>
+          <p>Năm chương trình có phí và một buổi Zoom AI Agent miễn phí hằng tuần. Nhắn Zalo để hỏi nội dung, lịch học và cách tham gia.</p>
         </div>
-        <div class="catalog-grid">
-          <article class="coming-card">
-            <div class="coming-top"><span class="status">300.000₫ / tháng</span><span class="orbit" aria-hidden="true">↗</span></div>
-            <div class="coming-copy"><h3>Tool tạo video Veo 3</h3><p>Gói thuê theo tháng. Nhắn trực tiếp cho FTG qua Zalo để trao đổi và nhận sản phẩm.</p></div>
+        <div class="course-grid">
+          <article class="course-card featured">
+            <div class="course-top"><span class="course-type">Video AI · Affiliate</span><span class="price">5.000.000₫</span></div>
+            <span class="course-icon" aria-hidden="true">▶</span>
+            <h3>Tạo tool sản xuất video AI</h3>
+            <p>Hướng dẫn xây dựng quy trình tạo hàng trăm video AI, tối ưu chi phí bằng các công cụ miễn phí; ứng dụng cho TikTok Affiliate, nội dung thị trường quốc tế và YouTube.</p>
+            <a class="card-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Hỏi về khóa học <span aria-hidden="true">↗</span></a>
           </article>
-          <div class="product-empty" aria-label="Liên hệ FTG để mua tool tạo video">
-            <div class="empty-inner"><span class="empty-symbol" aria-hidden="true">↗</span><h3>300.000₫ / tháng</h3><p>Nhắn Zalo cho FTG để hỏi mua tool Veo 3 và nhận sản phẩm.</p><a class="button" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Nhắn Zalo để mua <span class="arrow" aria-hidden="true">↗</span></a></div>
-          </div>
+          <article class="course-card">
+            <div class="course-top"><span class="course-type">AI Marketing · Bán hàng</span><span class="price">10.000.000₫</span></div>
+            <span class="course-icon" aria-hidden="true">✳</span>
+            <h3>Quảng cáo & nội dung bằng AI</h3>
+            <p>Tối ưu nội dung quảng cáo; dùng AI biên tập nội dung tham khảo khi có quyền sử dụng; tự động đăng bài ảnh/video và trả lời tin nhắn để hỗ trợ chốt đơn.</p>
+            <a class="card-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Hỏi về khóa học <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-type">Automation · n8n</span><span class="price">10.000.000₫</span></div>
+            <span class="course-icon" aria-hidden="true">⌘</span>
+            <h3>Automation với n8n</h3>
+            <p>Hướng dẫn cài đặt, sử dụng n8n, tạo workflow và ứng dụng những quy trình tự động hóa thực tế vào công việc.</p>
+            <a class="card-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Hỏi về khóa học <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-type">AI Agent · Doanh nghiệp</span><span class="price">5.000.000₫</span></div>
+            <span class="course-icon" aria-hidden="true">◎</span>
+            <h3>Multi-Agent cho doanh nghiệp</h3>
+            <p>Tìm hiểu cách điều phối nhiều Agent để phối hợp, phân công và xử lý công việc giữa các phòng ban trong doanh nghiệp.</p>
+            <a class="card-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Hỏi về khóa học <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="course-card featured">
+            <div class="course-top"><span class="course-type">Coaching · Định hướng</span><span class="price">100.000.000₫</span></div>
+            <span class="course-icon" aria-hidden="true">↗</span>
+            <h3>Coaching & tư vấn định hướng</h3>
+            <p>Tư vấn định hướng doanh nghiệp, nghề nghiệp và lộ trình phát triển các kỹ năng AI, Automation, Multi-Agent cùng những nội dung đào tạo ở trên.</p>
+            <a class="card-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Trao đổi về coaching <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="course-card free">
+            <div class="course-top"><span class="course-type">Dành cho người mới</span><span class="price">Miễn phí</span></div>
+            <span class="course-icon" aria-hidden="true">＋</span>
+            <h3>Zoom AI Agent hằng tuần</h3>
+            <p>Buổi Zoom online miễn phí hằng tuần dành cho người chưa biết gì về AI Agent, giúp bạn bắt đầu làm quen với chủ đề này.</p>
+            <a class="card-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Hỏi lịch & đăng ký <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
-        <div class="category-grid" aria-label="Cách mua sản phẩm">
-          <article class="category"><div class="category-top"><span class="category-num">BƯỚC 01</span><span class="category-mark" aria-hidden="true">01</span></div><div><h3>Nhắn tin</h3><p>Liên hệ FTG qua Zalo để hỏi mua.</p></div></article>
-          <article class="category"><div class="category-top"><span class="category-num">BƯỚC 02</span><span class="category-mark" aria-hidden="true">02</span></div><div><h3>Trao đổi</h3><p>Nhận thông tin trực tiếp từ FTG.</p></div></article>
-          <article class="category"><div class="category-top"><span class="category-num">BƯỚC 03</span><span class="category-mark" aria-hidden="true">03</span></div><div><h3>Nhận sản phẩm</h3><p>FTG gửi sản phẩm sau khi bạn liên hệ.</p></div></article>
+        <p class="fine-print">Chi phí thực tế khi xây dựng quy trình video có thể phụ thuộc công cụ, hạn mức miễn phí, nền tảng và hạ tầng sử dụng. Chương trình không cam kết lượt xem, doanh thu hay kết quả quảng cáo.</p>
+      </div>
+    </section>
+
+    <section class="veo-section" id="veo3" aria-labelledby="veo-title">
+      <div class="wrap veo-card">
+        <div>
+          <div class="eyebrow">Tool tạo video Veo 3</div>
+          <h2 id="veo-title">Gói Veo 3 vẫn ở đây.</h2>
+          <p>Thuê tool tạo video bằng Veo 3 theo tháng. Nhắn Zalo cho FTG để hỏi mua, trao đổi và nhận sản phẩm trực tiếp.</p>
+        </div>
+        <div class="veo-actions">
+          <span class="veo-price">300.000₫ / tháng</span>
+          <a class="button" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Nhắn Zalo để mua <span class="arrow" aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
 
-    <section class="about" id="cach-chon" aria-labelledby="about-title">
+    <section class="about" id="cach-nhan" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <div class="about-badge" aria-hidden="true"><div class="badge-word"><strong>FTG</strong><small>TECH · AGENCY</small></div></div>
-        <div class="about-copy" id="ve-ftg">
-          <div class="eyebrow">Cách nhận sản phẩm</div>
-          <h2 id="about-title">Mua qua tin nhắn, nhận sản phẩm trực tiếp.</h2>
-          <p>Tool tạo video bằng Veo 3 có giá thuê 300.000₫/tháng. Hãy nhắn cho FTG qua Zalo để trao đổi và nhận sản phẩm. Trang này là nơi giới thiệu và kết nối — không có giỏ hàng hay thanh toán tự động.</p>
+        <div class="about-copy">
+          <div class="eyebrow">Cách đăng ký</div>
+          <h2 id="about-title">Trao đổi trước khi bắt đầu.</h2>
+          <p>Nhắn cho FTG qua Zalo để hỏi chi tiết chương trình, lịch học và hình thức tham gia. Đây là trang giới thiệu và kết nối — không có giỏ hàng hay thanh toán tự động.</p>
           <div class="about-points">
-            <div class="about-point"><span aria-hidden="true">✓</span> Nhắn Zalo để hỏi mua</div>
+            <div class="about-point"><span aria-hidden="true">✓</span> Chọn khóa học hoặc buổi Zoom phù hợp</div>
+            <div class="about-point"><span aria-hidden="true">✓</span> Hỏi nội dung và lịch học qua Zalo</div>
             <div class="about-point"><span aria-hidden="true">✓</span> Trao đổi trực tiếp với FTG</div>
-            <div class="about-point"><span aria-hidden="true">✓</span> Nhận sản phẩm sau khi liên hệ</div>
-            <div class="about-point"><span aria-hidden="true">✓</span> Không cần đặt hàng trên trang</div>
+            <div class="about-point"><span aria-hidden="true">✓</span> Xác nhận thông tin trước khi đăng ký</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="closing" id="lien-he" aria-label="Liên hệ mua sản phẩm">
+    <section class="closing" id="lien-he" aria-label="Liên hệ FTG Tech">
       <div class="wrap closing-card">
-        <div><small>Tool tạo video Veo 3 · 300.000₫ / tháng</small><h2>Muốn mua? Nhắn Zalo cho FTG.</h2></div>
-        <a class="button" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Nhắn Zalo ngay <span class="arrow" aria-hidden="true">↗</span></a>
+        <div><small>Khóa học AI · Automation · Coaching</small><h2>Bạn muốn bắt đầu từ đâu?</h2></div>
+        <a class="button" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Nhắn Zalo cho FTG <span class="arrow" aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
@@ -282,7 +311,7 @@
   <footer>
     <div class="wrap footer-row">
       <span class="footer-brand"><span class="brand-mark" aria-hidden="true">FTG</span> FTG Tech <span style="font-weight:400;color:#7b8780">by FTG Agency</span></span>
-      <span>© <span id="year">2026</span> FTG Agency. Một website giới thiệu độc lập.</span>
+      <span>© 2026 FTG Agency. Một website giới thiệu độc lập.</span>
       <a href="https://ftgagency.github.io/" target="_blank" rel="noopener noreferrer">Website FTG Agency hiện tại ↗</a>
     </div>
   </footer>
