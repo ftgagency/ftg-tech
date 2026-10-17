@@ -107,10 +107,10 @@
     .course-card.free .card-link { color: var(--green); }
     .fine-print { color: var(--muted); font-size: 11px; line-height: 1.6; margin: 15px 0 0; }
     .tool-guide { padding: 72px 0; }
-    .tool-guide-grid { display: grid; grid-template-columns: 1fr minmax(240px, 340px); gap: 40px; align-items: center; padding: 32px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+    .tool-guide-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 240px); gap: 40px; align-items: center; padding: 32px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
     .tool-guide h2 { margin: 12px 0 18px; font-size: clamp(29px, 4vw, 45px); line-height: 1.08; letter-spacing: -.045em; }
     .tool-guide p { color: var(--muted); font-size: 14px; }
-    .tool-guide figure { margin: 0; width: 100%; }
+    .tool-guide figure { margin: 0 auto; width: 100%; max-width: 240px; }
     .tool-guide video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: contain; background: #101512; border-radius: 16px; }
     .tool-guide figcaption { color: var(--muted); font-size: 11px; margin-top: 10px; }
     .course-card .guide-link { display: inline-block; margin-top: 14px; color: var(--green-dark); font-size: 11px; font-weight: 850; text-decoration: underline; text-underline-offset: 3px; }
@@ -196,7 +196,7 @@
       .course-card .card-link { padding-top: 15px; }
       .tool-guide { padding: 58px 0; }
       .tool-guide-grid { grid-template-columns: 1fr; padding: 24px 21px; gap: 24px; }
-      .tool-guide figure { max-width: 340px; margin-inline: auto; }
+      .tool-guide figure { max-width: 240px; margin-inline: auto; }
       .veo-section { padding: 58px 0; }
       .veo-card { grid-template-columns: 1fr; padding: 24px 21px; }
       .veo-actions { align-items: flex-start; }
