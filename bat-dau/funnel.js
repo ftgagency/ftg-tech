@@ -31,3 +31,20 @@ document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener
  catch(error){notify('Chưa sao chép được. Bạn có thể chọn và sao chép trực tiếp phần tin nhắn phía trên.');}
 }));
 document.querySelectorAll('[data-contact]').forEach(link=>link.addEventListener('click',()=>{track('FunnelZaloClick',{entry:link.dataset.contact,goal:link.id==='consult-link'?selectedGoal:''});}));
+
+// Only explicit form submission sends contact data to FormSubmit; no autoresponse.
+const registrationForm=document.getElementById('registration-form');
+registrationForm.addEventListener('submit',()=>{
+ document.getElementById('submitted-at').value=new Date().toISOString();
+ const button=registrationForm.querySelector('button[type="submit"]');
+ button.disabled=true;button.textContent='ĐANG CHUYỂN SANG FORMSUBMIT…';
+});
+window.addEventListener('pageshow',()=>{
+ const button=registrationForm.querySelector('button[type="submit"]');
+ button.disabled=false;button.textContent='GỬI YÊU CẦU TƯ VẤN ↗';
+});
+if(new URLSearchParams(window.location.search).get('da-gui')==='1'){
+ const message=document.getElementById('registration-status');
+ message.textContent='Bạn đã quay lại từ bước gửi qua FormSubmit. FTG sẽ kiểm tra yêu cầu và liên hệ để xác nhận; đây chưa phải xác nhận chỗ học. Nếu chưa hoàn tất bước gửi hoặc cần hỗ trợ, hãy nhắn Zalo 0918 212 460.';
+ message.hidden=false;
+}
