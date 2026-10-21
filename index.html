@@ -154,6 +154,21 @@
     .footer-brand { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); font-weight: 850; white-space: nowrap; }
     .footer-brand .brand-mark { width: 28px; height: 28px; border-radius: 9px; font-size: 11px; }
     .mobile-contact { display: none; }
+    .ai-course { padding: 76px 0; }
+    .ai-course-panel { padding: clamp(24px, 4vw, 42px); border: 1px solid #d9e2d2; border-radius: 28px; background: linear-gradient(135deg, #e8eddc 0%, #f8f8f2 72%); }
+    .ai-course-panel h2 { max-width: 850px; margin: 12px 0 14px; font-size: clamp(32px, 4.5vw, 52px); line-height: 1.04; letter-spacing: -.03em; }
+    .ai-course-lead { max-width: 820px; margin: 0; color: #526057; font-size: 15px; line-height: 1.8; }
+    .ai-modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 27px; }
+    .ai-module, .ai-setup { padding: 19px; border: 1px solid rgba(24,33,29,.09); border-radius: 18px; background: rgba(255,255,255,.78); }
+    .ai-module strong { display: block; margin: 10px 0 6px; font-size: 14px; line-height: 1.35; text-transform: uppercase; }
+    .ai-module p, .ai-setup p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .ai-module-number { display: inline-grid; width: 28px; height: 28px; place-items: center; border-radius: 9px; background: #edf1e8; color: #42633b; font-size: 10px; font-weight: 900; }
+    .ai-setup-wrap { margin-top: 34px; }
+    .ai-setup-wrap h3 { margin: 0 0 13px; font-size: 19px; letter-spacing: -.01em; }
+    .ai-setup-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(205px, 1fr)); gap: 10px; }
+    .ai-setup strong { display: block; margin-bottom: 6px; font-size: 12px; text-transform: uppercase; }
+    .ai-course-note { margin: 18px 0 0; color: #56645a; font-size: 12px; line-height: 1.7; }
+    .ai-course-actions { display: flex; align-items: center; gap: 13px; flex-wrap: wrap; margin-top: 22px; }
     @media (max-width: 900px) {
       .nav-links { gap: 14px; }
       .nav-links a { font-size: 10px; }
@@ -306,7 +321,7 @@
       <div class="wrap">
         <div class="section-heading">
           <div><div class="eyebrow">Chương trình đào tạo</div><h2 id="catalog-title">Chọn kỹ năng bạn cần.</h2></div>
-          <p>Sáu lựa chọn từ buổi Zoom miễn phí cho người mới đến các chương trình chuyên sâu. Nhắn Zalo để hỏi nội dung, lịch học và cách tham gia.</p>
+          <p>Bảy lựa chọn từ buổi Zoom miễn phí cho người mới đến các chương trình chuyên sâu. Nhắn Zalo để hỏi nội dung, lịch học và cách tham gia.</p>
         </div>
         <div class="course-grid">
           <article class="course-card featured">
@@ -352,8 +367,47 @@
             <p>Buổi Zoom online miễn phí hằng tuần dành cho người chưa biết gì về AI Agent, giúp bạn bắt đầu làm quen với chủ đề này.</p>
             <a class="card-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">HỎI LỊCH & ĐĂNG KÝ <span aria-hidden="true">↗</span></a>
           </article>
+          <article class="course-card featured">
+            <div class="course-top"><span class="course-type">AI · Điều hành doanh nghiệp</span><span class="price">HỎI THÔNG TIN</span></div>
+            <span class="course-icon" aria-hidden="true">◎</span>
+            <h3>SIÊU TRỢ LÝ AI CHO CEO — XÂY BỘ NÃO THỨ 2</h3>
+            <p>Thiết kế trợ lý AI theo sản phẩm, khách hàng và quy trình doanh nghiệp; kết nối các công việc nội dung, bán hàng và quảng cáo theo quyền đã duyệt.</p>
+            <a class="card-link" href="#sieu-tro-ly-ai">XEM CHI TIẾT KHÓA HỌC ↓</a>
+          </article>
         </div>
         <p class="fine-print">Chương trình không cam kết lượt xem, doanh thu hay kết quả quảng cáo. Hãy trao đổi với FTG về nội dung và lịch học trước khi đăng ký.</p>
+      </div>
+    </section>
+
+    <section class="ai-course" id="sieu-tro-ly-ai" aria-labelledby="ai-course-title">
+      <div class="wrap ai-course-panel">
+        <div class="eyebrow">CHƯƠNG TRÌNH · AI CHO CEO</div>
+        <h2 id="ai-course-title">SIÊU TRỢ LÝ AI CHO CEO — XÂY BỘ NÃO THỨ 2</h2>
+        <p class="ai-course-lead">Tìm hiểu cách thiết kế một hệ thống trợ lý AI hỗ trợ điều hành và triển khai công việc marketing. AI được cấu hình theo sản phẩm, khách hàng mục tiêu, giọng điệu thương hiệu, quy trình và giới hạn vận hành của từng doanh nghiệp — không phải một câu lệnh duy nhất tự làm mọi việc. Các tác vụ cần quy trình đã thiết lập, tài khoản được kết nối và quyền truy cập được doanh nghiệp phê duyệt.</p>
+
+        <div class="ai-modules" aria-label="Sáu module của chương trình">
+          <article class="ai-module"><span class="ai-module-number">01</span><strong>XÂY KÊNH THEO KẾ HOẠCH NỘI DUNG</strong><p>Lập trụ cột chủ đề, lịch đăng và định hướng nội dung cho từng kênh dựa trên mục tiêu, sản phẩm và tệp khách hàng.</p></article>
+          <article class="ai-module"><span class="ai-module-number">02</span><strong>TẠO PAGE</strong><p>Chuẩn bị cấu trúc trang, thông tin thương hiệu, phần giới thiệu và các nội dung nền cần thiết cho page.</p></article>
+          <article class="ai-module"><span class="ai-module-number">03</span><strong>VIẾT VÀ ĐĂNG BÀI</strong><p>Soạn bản nháp theo giọng thương hiệu, kiểm tra thông tin rồi đăng theo lịch sau khi người phụ trách duyệt.</p></article>
+          <article class="ai-module"><span class="ai-module-number">04</span><strong>EDIT VIDEO</strong><p>Hỗ trợ quy trình biên tập video theo định dạng, thông điệp, nhận diện và yêu cầu của từng kênh.</p></article>
+          <article class="ai-module"><span class="ai-module-number">05</span><strong>LANDING PAGE BÁN HÀNG</strong><p>Xây bố cục và nội dung trang đích theo sản phẩm, nhu cầu khách hàng và hành trình chuyển đổi đã thống nhất.</p></article>
+          <article class="ai-module"><span class="ai-module-number">06</span><strong>QUẢNG CÁO TRONG NGÂN SÁCH ĐÃ DUYỆT</strong><p>Chuẩn bị và hỗ trợ vận hành quảng cáo với giới hạn ngân sách được phê duyệt; không tự ý vượt mức hoặc tăng ngân sách.</p></article>
+        </div>
+
+        <div class="ai-setup-wrap">
+          <h3>QUY TRÌNH CÀI ĐẶT VÀ SỬ DỤNG</h3>
+          <div class="ai-setup-grid">
+            <div class="ai-setup"><strong>01 · THU THẬP DỮ LIỆU VÀ BRAND</strong><p>Tập hợp thông tin sản phẩm, khách hàng, định vị, giọng điệu, nội dung mẫu, quy trình hiện tại và các giới hạn cần tuân thủ.</p></div>
+            <div class="ai-setup"><strong>02 · KẾT NỐI TÀI KHOẢN ĐÚNG QUYỀN</strong><p>Xác định các tài khoản/công cụ cần dùng; chủ doanh nghiệp hoặc quản trị viên cấp quyền tối thiểu phù hợp, có phê duyệt và có thể thu hồi. Không chia sẻ mật khẩu cá nhân.</p></div>
+            <div class="ai-setup"><strong>03 · DỰNG WORKFLOW VÀ KIỂM THỬ</strong><p>Cấu hình từng bước, đầu vào/đầu ra, người chịu trách nhiệm và điểm kiểm tra; chạy thử trên dữ liệu mẫu, rà soát lỗi trước khi đưa vào dùng.</p></div>
+            <div class="ai-setup"><strong>04 · DUYỆT NỘI DUNG VÀ NGÂN SÁCH</strong><p>Thiết lập điểm duyệt của người phụ trách trước khi xuất bản hoặc chạy quảng cáo; chỉ thực hiện trong ngân sách đã được phê duyệt.</p></div>
+            <div class="ai-setup"><strong>05 · BÀN GIAO, GIÁM SÁT, TẠM DỪNG</strong><p>Bàn giao cách dùng và đầu mối quản trị; theo dõi lịch sử chạy, chất lượng đầu ra và cảnh báo. Người có quyền có thể tạm dừng workflow hoặc thu hồi kết nối khi cần.</p></div>
+          </div>
+        </div>
+        <p class="ai-course-note">Tự động hóa phụ thuộc vào quy trình, công cụ, quyền truy cập và phê duyệt của doanh nghiệp. Nội dung này không phải cam kết về doanh thu, hiệu quả quảng cáo hay kết quả kinh doanh.</p>
+        <div class="ai-course-actions">
+          <a class="button" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">NHẮN “SIÊU TRỢ LÝ AI” · 0918 212 460 <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
 
