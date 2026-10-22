@@ -15,14 +15,14 @@ registrationForm.addEventListener('submit',()=>{
  document.getElementById('submitted-at').value=new Date().toISOString();
  const button=registrationForm.querySelector('button[type="submit"]');
  button.disabled=true;button.textContent='ĐANG CHUYỂN SANG FORMSUBMIT…';
- track('FunnelLeadSubmit',{content_name:'Khóa Quảng cáo Facebook & TikTok bằng AI'});
+ track('FunnelLeadSubmit',{content_name:'Zoom AI Agent miễn phí hằng tuần'});
 });
 window.addEventListener('pageshow',()=>{
  const button=registrationForm.querySelector('button[type="submit"]');
- button.disabled=false;button.textContent='GỬI YÊU CẦU TƯ VẤN ↗';
+ button.disabled=false;button.textContent='GỬI YÊU CẦU NHẬN LỊCH ZOOM ↗';
 });
 if(new URLSearchParams(window.location.search).get('da-gui')==='1'){
  const message=document.getElementById('registration-status');
- message.textContent='Bạn đã quay lại từ bước gửi qua FormSubmit. FTG sẽ kiểm tra yêu cầu khóa Quảng cáo Facebook & TikTok bằng AI (10.000.000₫) và liên hệ để xác nhận; đây chưa phải xác nhận chỗ học. Nếu chưa hoàn tất bước gửi hoặc cần hỗ trợ, hãy nhắn Zalo 0918 212 460.';
+ message.textContent='Bạn đã quay lại từ bước gửi qua FormSubmit. FTG sẽ kiểm tra yêu cầu nhận lịch Zoom AI Agent miễn phí hằng tuần và liên hệ để xác nhận lịch, cách tham gia; đây chưa phải xác nhận tham gia. Nếu chưa hoàn tất bước gửi hoặc cần hỗ trợ, hãy nhắn Zalo 0918 212 460.';
  message.hidden=false;
 }
