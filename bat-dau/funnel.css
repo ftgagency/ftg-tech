@@ -102,3 +102,7 @@ h1,h2,h3{overflow-wrap:anywhere}
 .free-course-banner .button{flex-shrink:0;background:var(--green);color:var(--ink)}
 @media(max-width:1000px){.free-course-banner{align-items:flex-start;flex-direction:column;gap:22px}}
 @media(max-width:700px){.ai-showcase:first-child{padding-top:24px}.free-course-banner{padding:24px;margin-bottom:30px}.free-course-banner .eyebrow{font-size:12px}.free-course-title{font-size:60px}.free-course-title span{display:block;font-size:30px;margin-top:6px}.free-course-banner .button{width:100%}}
+
+/* Existing microphone portrait in the hero: show the full image, with no caption overlay. */
+.hero-portrait>img{height:auto;aspect-ratio:1260/1280;object-fit:contain}
+.hero-portrait .visual-caption{position:static;margin-top:11px;transform:none}
