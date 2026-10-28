@@ -231,6 +231,11 @@
       html { scroll-behavior: auto; }
       *, *::before, *::after { transition-duration: .01ms !important; }
     }
+
+    .user-feedback{padding:72px 0;background:#eef0e8}
+    .user-feedback-figure{max-width:900px;margin:0 auto;padding:8px;border:1px solid var(--line);border-radius:24px;background:var(--white);box-shadow:0 14px 40px rgba(37,54,39,.09)}
+    .user-feedback-figure img{display:block;width:100%;height:auto;border-radius:16px}
+    @media(max-width:700px){.user-feedback{padding:54px 0}.user-feedback-figure{padding:6px;border-radius:18px}.user-feedback-figure img{border-radius:12px}}
   </style>
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1695543372086757'); fbq('track', 'PageView');</script>
 </head>
@@ -445,6 +450,13 @@
       </div>
     </section>
 
+
+    <section class="user-feedback" id="feedback" aria-labelledby="feedback-title">
+      <div class="wrap">
+        <div class="section-heading"><h2 id="feedback-title">FEEDBACK</h2></div>
+        <figure class="user-feedback-figure"><img src="https://ftgagency.github.io/assets/feedback-ftg.jpg" alt="Hai người ngồi bên máy tính xách tay tại quán cà phê" width="1280" height="956" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
     <section class="about" id="dang-ky" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <div class="about-badge" aria-hidden="true"><div class="badge-word"><strong>FTG</strong><small>TECH · AGENCY</small></div></div>
