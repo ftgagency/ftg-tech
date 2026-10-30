@@ -15,6 +15,7 @@ const registrationForm=document.getElementById('registration-form');
 const statusEl=document.getElementById('registration-status');
 const successEl=document.getElementById('registration-success');
 const submitButton=registrationForm.querySelector('button[type="submit"]');
+let isSubmitting=false;
 
 function showStatus(message,kind){
  statusEl.hidden=false;
@@ -35,12 +36,13 @@ function showSuccess(){
 
 registrationForm.addEventListener('submit',async event=>{
  event.preventDefault();
- if(successEl&&!successEl.hidden)return;
+ if(isSubmitting||(successEl&&!successEl.hidden))return;
  const formData=new FormData(registrationForm);
  if(!formData.get('_honey'))formData.set('_honey','');
  formData.set('source','ftg-tech-bat-dau');
  formData.set('submitted_at_utc',new Date().toISOString());
  if(!registrationForm.reportValidity())return;
+ isSubmitting=true;
  submitButton.disabled=true;
  submitButton.textContent='ĐANG GỬI…';
  showStatus('Đang gửi yêu cầu nhận lịch Zoom.', 'info');
@@ -55,6 +57,7 @@ registrationForm.addEventListener('submit',async event=>{
   showSuccess();
  }catch(error){
   showStatus('Chưa gửi được. Kiểm tra kết nối rồi gửi lại, hoặc nhắn Zalo 0918 212 460.', 'error');
+  isSubmitting=false;
   submitButton.disabled=false;
   submitButton.textContent='GỬI YÊU CẦU NHẬN LỊCH ZOOM ↗';
  }
